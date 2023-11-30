@@ -247,4 +247,9 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
+
+.service:hover .service-icon {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 /* ?==================== End Service Section ====================? */
