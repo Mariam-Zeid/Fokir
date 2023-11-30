@@ -1,9 +1,30 @@
-/* ?==================== Media Queries For the Font Size ====================? */
+/* ?==================== Media Queries For the Font Size & Styling ====================? */
+/* 1200px */
+@media screen and (max-width: 75em) {
+  .user-img-border {
+    width: 80%;
+  }
+  .user-info--list {
+    width: 100%;
+  }
+  
+}
+
 /* 992px */
 @media screen and (max-width: 62em) {
   html {
     /* 9px */
     font-size: 56.25%;
+  }
+  .user-img-border {
+    box-shadow: none;
+    width: 100%;
+  }
+  .user-img-box {
+    transform: translate(0, 0);
+  }
+  .user-container {
+    gap: 5rem;
   }
 }
 /* 768px */
@@ -12,33 +33,41 @@
     /* 8px */
     font-size: 50%;
   }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* ?==================== Media Queries For the Styling ====================? */
+/* ?==================== Media Queries For the Container ====================? */
+/* 576px */
+@media screen and (max-width: 36em) {
+  .container {
+    max-width: 100%;
+  }
+}
 /* 576px */
 @media screen and (min-width: 36em) {
   .container {
-    max-width: 54rem;
+    max-width: 540px;
   }
 }
-
 /* 768px */
 @media screen and (min-width: 48em) {
   .container {
-    max-width: 72rem;
+    max-width: 790px;
   }
-}
 
+}
 /* 992px */
 @media screen and (min-width: 62em) {
   .container {
-    max-width: 96rem;
+    max-width: 970px;
   }
 }
-
 /* 1200px */
 @media screen and (min-width: 75em) {
   .container {
-    max-width: 114rem;
+    max-width: 1140px;
   }
 }
