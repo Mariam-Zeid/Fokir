@@ -29,6 +29,7 @@
   border: none;
   margin-top: 2rem;
   margin-right: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-icon {
@@ -36,6 +37,9 @@
   color: #fff;
 }
 
+.btn:hover {
+  background-color: #ec2403;
+}
 
 .primary-heading {
   color: #ff305b;
