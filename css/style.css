@@ -161,7 +161,7 @@
   display: block;
   object-fit: cover;
 }
-.img-overlay {
+.user-img-overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,16 +176,16 @@
   opacity: 0;
   transition: all 0.5s ease 0s;
 }
-.img-overlay i {
+.user-img-overlay i {
   font-size: 2rem;
   color: #fff;
   transition: all 0.5s;
 }
-.user-img-box:hover .img-overlay {
+.user-img-box:hover .user-img-overlay {
   top: 0;
   opacity: 1;
 }
-.img-overlay i:hover {
+.user-img-overlay i:hover {
   color: #ff305b;
 }
 .info-heading {
@@ -253,3 +253,47 @@
   transform: scale(1.2);
 }
 /* ?==================== End Service Section ====================? */
+
+/* ?==================== Start Portfolio Section ====================? */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+  
+}
+.nav-tab-link {
+    color: #333;
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+    text-transform: uppercase;
+}
+.nav-tab-link.active {
+  color: #ff305b;
+}
+
+.gallery {
+  gap: 2.5rem;
+}
+.portfolio-img-box {
+  position: relative;
+}
+.portfolio-img {
+  width: 100%;
+}
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+  transition: all 0.4s ease 0s;
+}
+.portfolio-img-box:hover .portfolio-overlay {
+  opacity: .5;
+}
+/* ?==================== End Portfolio Section ====================? */
