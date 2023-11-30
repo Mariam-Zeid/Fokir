@@ -1,14 +1,24 @@
+/* ?==================== Media Queries For the Font Size ====================? */
+/* 992px */
+@media screen and (max-width: 62em) {
+  html {
+    /* 9px */
+    font-size: 56.25%;
+  }
+}
+/* 768px */
+@media screen and (max-width: 48em) {
+  html {
+    /* 8px */
+    font-size: 50%;
+  }
+}
+
+/* ?==================== Media Queries For the Styling ====================? */
 /* 576px */
 @media screen and (min-width: 36em) {
   .container {
     max-width: 54rem;
-  }
-}
-
-/* 768px */
-@media screen and (min-width: 48em) {
-  .container {
-    max-width: 72rem;
   }
 }
 
@@ -32,4 +42,3 @@
     max-width: 114rem;
   }
 }
-

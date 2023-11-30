@@ -1,6 +1,16 @@
 .container {
-  background-color: aqua;
-  height: 100vh;
   max-width: 120rem;
   margin-inline: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.primary-heading {
+  color: #ff305b;
+  font-size: 7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-block: 1.5rem;
 }

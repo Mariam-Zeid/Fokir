@@ -1,0 +1,142 @@
+/* ?==================== Start Hero Section ====================? */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/hero\ img.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  /* Centering the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.animated-text {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.animated-text::after {
+  content: "";
+  animation: typing 5s infinite cubic-bezier(0, 0, 1, 1);
+}
+
+/* Developer - Designer */
+@keyframes typing {
+  0% {
+    content: "D|";
+  }
+  3% {
+    content: "De|";
+  }
+  6% {
+    content: "Dev|";
+  }
+  9% {
+    content: "Deve|";
+  }
+  12% {
+    content: "Devel|";
+  }
+  15% {
+    content: "Develo|";
+  }
+  18% {
+    content: "Develop|";
+  }
+  21% {
+    content: "Develope|";
+  }
+  24% {
+    content: "Developer|";
+  }
+  27% {
+    content: "Develope|";
+  }
+  30% {
+    content: "Develop|";
+  }
+  33% {
+    content: "Develo|";
+  }
+  36% {
+    content: "Devel|";
+  }
+  39% {
+    content: "Deve|";
+  }
+  42% {
+    content: "Dev|";
+  }
+  45% {
+    content: "De|";
+  }
+  48% {
+    content: "D|";
+  }
+  51% {
+    content: "|";
+  }
+
+  54% {
+    content: "D|";
+  }
+  57% {
+    content: "De|";
+  }
+  60% {
+    content: "Des|";
+  }
+  63% {
+    content: "Desi|";
+  }
+  66% {
+    content: "Desig|";
+  }
+  69% {
+    content: "Design|";
+  }
+  72% {
+    content: "Designe|";
+  }
+  75% {
+    content: "Designer|";
+  }
+  78% {
+    content: "Designe|";
+  }
+  81% {
+    content: "Design|";
+  }
+  84% {
+    content: "Desig|";
+  }
+  87% {
+    content: "Desi|";
+  }
+  90% {
+    content: "Des|";
+  }
+  93% {
+    content: "De|";
+  }
+  96% {
+    content: "D|";
+  }
+  99% {
+    content: "|";
+  }
+  100% {
+    content: "|";
+  }
+}
+/* ?==================== End Hero Section ====================? */
