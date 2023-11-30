@@ -36,6 +36,9 @@
     /* 8px */
     font-size: 50%;
   }
+  .sect-pd {
+  padding-block: 6.4rem;
+}
 
   .grid--2-cols,
   .grid--3-cols,
@@ -49,6 +52,10 @@
   .nav-tabs {
     gap: 1.5rem;
   }
+  .funfacts-section .container {
+  grid-template-columns: 1fr;
+  row-gap: 3.5rem;
+}
 }
 
 /* ?==================== Media Queries For the Container ====================? */
