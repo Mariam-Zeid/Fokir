@@ -1,0 +1,35 @@
+/* 576px */
+@media screen and (min-width: 36em) {
+  .container {
+    max-width: 54rem;
+  }
+}
+
+/* 768px */
+@media screen and (min-width: 48em) {
+  .container {
+    max-width: 72rem;
+  }
+}
+
+/* 768px */
+@media screen and (min-width: 48em) {
+  .container {
+    max-width: 72rem;
+  }
+}
+
+/* 992px */
+@media screen and (min-width: 62em) {
+  .container {
+    max-width: 96rem;
+  }
+}
+
+/* 1200px */
+@media screen and (min-width: 75em) {
+  .container {
+    max-width: 114rem;
+  }
+}
+
