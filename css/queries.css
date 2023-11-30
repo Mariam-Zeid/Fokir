@@ -7,7 +7,6 @@
   .user-info--list {
     width: 100%;
   }
-  
 }
 
 /* 992px */
@@ -26,6 +25,9 @@
   .user-container {
     gap: 5rem;
   }
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* 768px */
 @media screen and (max-width: 48em) {
@@ -34,8 +36,13 @@
     font-size: 50%;
   }
 
-  .grid--2-cols {
+  .grid--2-cols,
+  .grid--4-cols {
     grid-template-columns: 1fr;
+  }
+
+  .service .inner {
+    padding: 3.5rem 4.5rem;
   }
 }
 
@@ -57,7 +64,6 @@
   .container {
     max-width: 790px;
   }
-
 }
 /* 992px */
 @media screen and (min-width: 62em) {

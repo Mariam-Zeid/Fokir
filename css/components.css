@@ -10,9 +10,16 @@
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .sect-pd {
   padding-block: 9.6rem;
+}
+
+.sect-bg {
+  background: #f1f1f1;
 }
 
 .text-center {
@@ -47,4 +54,46 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-block: 1.5rem;
+}
+
+.secondary-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.secondary-heading::before,
+.secondary-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.secondary-heading::before {
+  bottom: 0;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 0.1rem 0; /* 1px top and bottom, 0 left and right*/
+  padding: 0.4rem 0 0.5rem;
+  width: 7rem;
+}
+
+.secondary-heading::after {
+  background-color: #ff305b;
+  bottom: 0.5rem;
+  height: 0.1rem;
+  width: 16rem;
+}
+
+.tertiary-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
