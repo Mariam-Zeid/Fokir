@@ -339,11 +339,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  
 
   border-width: 8.5rem;
   border-style: solid;
-  border-color: #ff305b  transparent transparent #ff305b ;  /* top - right - bottom - left */
+  border-color: #ff305b transparent transparent #ff305b; /* top - right - bottom - left */
 }
 .testimonial-img-box {
   border-radius: 50%;
@@ -356,35 +355,72 @@
 .testimonial-img {
   width: 100%;
 }
-
 .testimonial-content-box {
   justify-self: start;
 }
-
 .testimonial-location {
   color: #777;
   font-size: 15px;
   margin-bottom: 1rem;
 }
-
 .testimonial-location i {
   font-size: 1.3rem;
 }
-
 .testimonial-text {
   font-style: italic;
   margin-bottom: 1rem;
 }
-
 .rating-stars {
   display: flex;
   gap: 0.3rem;
   font-size: 1.6rem;
   margin-bottom: 12px;
 }
-
 .rating-star {
   color: #f1c30d;
 }
 
 /* ?==================== End Testimonials Section ====================? */
+
+/* ?==================== Start Blog Section ====================? */
+.blog-container {
+  gap: 3rem;
+}
+.blog-post {
+  background: #ffffff;
+}
+.blog-img {
+  width: 100%;
+}
+.post-content {
+  padding: 2rem;
+}
+.date {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.blog-post .tertiary-heading {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.blog-post .tertiary-heading:hover, .post-btn:hover {
+  color: #ff305b;
+}
+.post-text {
+  margin-bottom: 2rem;
+}
+.post-btn {
+  font-size: 1.8rem;
+  color: #333;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.aspect-ratio {
+  aspect-ratio: 16/9;
+}
+/* ?==================== End Blog Section ====================? */
