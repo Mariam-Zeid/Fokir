@@ -4,6 +4,10 @@
   padding-inline: 1.7rem;
 }
 
+.flx {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }

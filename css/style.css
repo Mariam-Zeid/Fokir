@@ -1,4 +1,67 @@
 /* ?==================== Start Hero Section ====================? */
+.header {
+
+  background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  z-index: 99;
+  
+  padding-block: 2.3rem;
+  width: 100%;
+}
+.header .container {
+  background-color: transparent;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: #ff305b;
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+/* .nav {
+  margin-left: auto;
+} */
+.nav-list {
+  gap: 2rem;
+}
+.nav-link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.nav-link:hover {
+  color: #ff305b;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-icon-nav {
+  font-size: 3rem;
+}
+.mobile-icon-nav.fa-bars {
+  color: #fff;
+}
+.mobile-icon-nav.fa-xmark {
+  color: #777;
+  display: none;
+  transition: all .3s ease;
+}
+.mobile-icon-nav.fa-xmark:hover {
+  color: #fff;
+}
+/* ?==================== Start Hero Section ====================? */
+
+/* ?==================== Start Hero Section ====================? */
 .hero-section {
   height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -349,7 +412,7 @@
   overflow: hidden;
   position: relative;
   width: 25rem;
-  z-index: 999;
+  z-index: 9;
   align-self: flex-start;
 }
 .testimonial-img {
@@ -487,12 +550,14 @@ textarea::placeholder {
 .footer-icon {
   font-size: 1.7rem;
   margin-bottom: 2rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.footer-icon:hover, .footer-text span  {
+.footer-icon:hover,
+.footer-text span {
   color: #ff305b;
 }
-.footer-icon,.footer-text {
-   color: #fff;
+.footer-icon,
+.footer-text {
+  color: #fff;
 }
 /* ?==================== End Footer ====================? */
