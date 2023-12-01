@@ -37,8 +37,8 @@
     font-size: 50%;
   }
   .sect-pd {
-  padding-block: 6.4rem;
-}
+    padding-block: 6.4rem;
+  }
 
   .grid--2-cols,
   .grid--3-cols,
@@ -53,9 +53,29 @@
     gap: 1.5rem;
   }
   .funfacts-section .container {
-  grid-template-columns: 1fr;
-  row-gap: 3.5rem;
+    grid-template-columns: 1fr;
+    row-gap: 3.5rem;
+  }
+  .testimonial {
+    flex-direction: column;
+    width: 50rem;
+  }
+  .testimonial-img-box {
+    align-self: center;
+    width: 15rem;
+  }
 }
+
+/* 576px */
+@media screen and (max-width: 36em) {
+  .testimonial {
+    flex-direction: column;
+    width: 40rem;
+  }
+  .testimonial-img-box {
+    align-self: center;
+    width: 10rem;
+  }
 }
 
 /* ?==================== Media Queries For the Container ====================? */
