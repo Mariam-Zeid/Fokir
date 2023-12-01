@@ -29,7 +29,7 @@
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
-  .blog-container.grid--3-cols{
+  .blog-container.grid--3-cols {
     grid-template-columns: 1fr;
     gap: 5rem;
   }
@@ -68,6 +68,13 @@
     align-self: center;
     width: 15rem;
   }
+  .form-container {
+    width: 60rem;
+  }
+  input:nth-child(3),
+  textarea {
+    grid-column: span 1;
+  }
 }
 
 /* 576px */
@@ -79,6 +86,9 @@
   .testimonial-img-box {
     align-self: center;
     width: 10rem;
+  }
+  .form-container {
+    width: 35rem;
   }
 }
 

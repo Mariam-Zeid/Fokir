@@ -405,7 +405,8 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.blog-post .tertiary-heading:hover, .post-btn:hover {
+.blog-post .tertiary-heading:hover,
+.post-btn:hover {
   color: #ff305b;
 }
 .post-text {
@@ -419,8 +420,55 @@
   transition: all 0.3s ease-in-out;
 }
 
-
 .aspect-ratio {
   aspect-ratio: 16/9;
 }
 /* ?==================== End Blog Section ====================? */
+
+/* ?==================== Start Contact Section ====================? */
+.form-container {
+  width: 70rem;
+  margin-inline: auto;
+}
+.form-container .grid {
+  gap: 1.5rem;
+}
+input:nth-child(3),
+textarea {
+  grid-column: span 2;
+}
+
+input,
+textarea {
+  padding: 0.6rem 1.2rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+input {
+  height: 4rem;
+}
+input:focus-within, textarea:focus-within  {
+  border-color: #ff305b;
+  outline: #ff305b;
+  box-shadow: inset 0 0 2px rgba(255,48,91,0.5);
+}
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Source Sans 3", sans-serif;
+  color: #999;
+  font-size: 1.6rem;
+}
+
+.form-container .btn {
+  grid-column: span 1;
+}
+/* ?==================== End Contact Section ====================? */
