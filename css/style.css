@@ -452,10 +452,11 @@ textarea {
 input {
   height: 4rem;
 }
-input:focus-within, textarea:focus-within  {
+input:focus-within,
+textarea:focus-within {
   border-color: #ff305b;
   outline: #ff305b;
-  box-shadow: inset 0 0 2px rgba(255,48,91,0.5);
+  box-shadow: inset 0 0 2px rgba(255, 48, 91, 0.5);
 }
 textarea {
   resize: vertical;
@@ -472,3 +473,26 @@ textarea::placeholder {
   grid-column: span 1;
 }
 /* ?==================== End Contact Section ====================? */
+
+/* ?==================== Start Footer ====================? */
+.footer {
+  background-color: #333;
+  padding: 3rem 0;
+}
+.footer-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-icon {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  transition: all .3s ease;
+}
+.footer-icon:hover, .footer-text span  {
+  color: #ff305b;
+}
+.footer-icon,.footer-text {
+   color: #fff;
+}
+/* ?==================== End Footer ====================? */
