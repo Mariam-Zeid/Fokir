@@ -33,6 +33,10 @@
     grid-template-columns: 1fr;
     gap: 5rem;
   }
+  .blog-post {
+  width: 85%;
+  margin-inline: auto;
+}
 }
 /* 768px */
 @media screen and (max-width: 48em) {
