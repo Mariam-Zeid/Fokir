@@ -36,11 +36,6 @@
 }
 /* 768px */
 @media screen and (max-width: 48em) {
-  html {
-    /* 8px */
-    font-size: 50%;
-  }
-
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
