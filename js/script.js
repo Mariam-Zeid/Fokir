@@ -1,4 +1,14 @@
 ///////////////////////////////////////////////////////////
+// Animated typing
+
+let typed = new Typed("#dynamicText", {
+  strings: ["Developer.", "Designer."],
+  typeSpeed: 60, // Typing speed in milliseconds
+  backSpeed: 40, // Backspacing speed in milliseconds
+  loop: true, // Set to true to loop through the strings infinitely
+});
+
+///////////////////////////////////////////////////////////
 // Make mobile navigation work
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");

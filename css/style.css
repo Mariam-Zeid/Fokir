@@ -92,14 +92,14 @@
   text-transform: capitalize;
   position: relative;
 }
-
+/* 
 .animated-text::after {
   content: "";
   animation: typing 5s infinite cubic-bezier(0, 0, 1, 1);
-}
+} */
 
 /* Developer - Designer */
-@keyframes typing {
+/* @keyframes typing {
   0% {
     content: "D|";
   }
@@ -206,7 +206,7 @@
   100% {
     content: "|";
   }
-}
+} */
 /* ?==================== End Hero Section ====================? */
 
 /* ?==================== Start About Section ====================? */
