@@ -1,13 +1,18 @@
 /* ?==================== Start Hero Section ====================? */
 .header {
-
-  background-color: rgba(0, 0, 0, .9);
+  background-color: transparent;
   position: fixed;
   z-index: 99;
-  
+
   padding-block: 2.3rem;
   width: 100%;
+
+  transition: background-color 0.3s;
 }
+.header-scrolled {
+  background-color: rgb(0, 0, 0,.95);
+}
+
 .header .container {
   background-color: transparent;
   text-transform: capitalize;
@@ -54,7 +59,7 @@
 .mobile-icon-nav.fa-xmark {
   color: #777;
   display: none;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .mobile-icon-nav.fa-xmark:hover {
   color: #fff;

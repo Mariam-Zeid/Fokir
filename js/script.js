@@ -8,7 +8,6 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation when clicking on mobile nav link
 
@@ -36,4 +35,16 @@ allLinks.forEach(function (link) {
     if (link.classList.contains("nav-link"))
       headerEl.classList.toggle("nav-open");
   });
+});
+
+///////////////////////////////////////////////////////////
+// Smooth animated navbar while scrolling
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".header");
+  if (window.scrollY > 100) {
+    navbar.classList.add("header-scrolled"); // Add class when scrolled
+  } else {
+    navbar.classList.remove("header-scrolled"); // Remove class when not scrolled
+  }
 });
