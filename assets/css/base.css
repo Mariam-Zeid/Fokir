@@ -30,6 +30,11 @@ p {
   line-height: 1.5;
 }
 
+p,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
 h1,
 h2,
 h3,
