@@ -39,7 +39,7 @@
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-.nav-link:hover {
+.nav-link:hover, .nav-link.active {
   color: #ff305b;
 }
 

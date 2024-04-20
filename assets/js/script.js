@@ -62,13 +62,34 @@ window.addEventListener("scroll", function () {
 ///////////////////////////////////////////////////////////
 
 $(document).ready(function ($) {
+  // Set active link when clicking on specific link
+  $("nav ul li a").on("click", function () {
+    $(this).closest("nav ul").find("a.active").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  // Set active link when the page is scrolling
+  $(window).scroll(function () {
+    let $sections = $("section");
+    $sections.each(function (index, element) {
+      let top = $(element).offset().top - 100;
+      let bottom = top + $(element).height();
+      let scroll = $(window).scrollTop();
+      let id = $(element).attr("id");
+      if (scroll > top && scroll < bottom) {
+        $("a.active").removeClass("active");
+        $('a[href="#' + id + '"]').addClass("active");
+      }
+    });
+  });
+
   // Count up numbers with specified delay and duration
   $(".fact-number").counterUp({
     delay: 10,
     time: 1000,
   });
 
-  // 
+  // Added a carousel component for testimonials
   $(".owl-carousel").owlCarousel({
     items: 1,
     dots: true,
