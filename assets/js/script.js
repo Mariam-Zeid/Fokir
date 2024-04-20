@@ -58,3 +58,13 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("header-scrolled"); // Remove class when not scrolled
   }
 });
+
+///////////////////////////////////////////////////////////
+// Count up numbers with specified delay and duration
+
+$(document).ready(function ($) {
+  $(".fact-number").counterUp({
+    delay: 10,
+    time: 1000,
+  });
+});
