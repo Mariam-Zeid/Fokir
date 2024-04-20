@@ -60,11 +60,18 @@ window.addEventListener("scroll", function () {
 });
 
 ///////////////////////////////////////////////////////////
-// Count up numbers with specified delay and duration
 
 $(document).ready(function ($) {
+  // Count up numbers with specified delay and duration
   $(".fact-number").counterUp({
     delay: 10,
     time: 1000,
+  });
+
+  // 
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    dots: true,
+    center: true,
   });
 });
