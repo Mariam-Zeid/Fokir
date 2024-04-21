@@ -1,6 +1,0 @@
-Adding the youtube video step 
-1- youtube video
-2- share
-3- Embed
-4- iframe code
-put it in aspect ratio 
