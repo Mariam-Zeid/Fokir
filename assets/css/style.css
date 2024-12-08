@@ -39,7 +39,8 @@
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: #ff305b;
 }
 
@@ -450,11 +451,11 @@
 .owl-theme .owl-dots .owl-dot span {
   background: rgba(0, 0, 0, 0) !important;
   border: 1px solid #ff305b;
-  transition: width .2s !important;
+  transition: width 0.2s !important;
 }
 .owl-theme .owl-dots .owl-dot.active span {
   background: #ff305b !important;
-      width: 35px !important;
+  width: 35px !important;
 }
 
 /* ?==================== End Testimonials Section ====================? */
@@ -547,6 +548,9 @@ textarea::placeholder {
 
 .form-container .btn {
   grid-column: span 1;
+}
+#recaptcha {
+  margin-top: 2rem;
 }
 /* ?==================== End Contact Section ====================? */
 

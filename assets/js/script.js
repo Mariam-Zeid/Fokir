@@ -96,3 +96,18 @@ $(document).ready(function ($) {
     center: true,
   });
 });
+
+///////////////////////////////////////////////////////////
+// form submition
+
+const form = document.querySelector("form");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const name = formData.get("name");
+  const email = formData.get("mail");
+  const subject = formData.get("subject");
+  const message = formData.get("message");
+  console.log(name, email, subject, message);
+  event.target.reset();
+});

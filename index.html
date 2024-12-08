@@ -25,6 +25,9 @@
     rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
 
+  <!-- ?==================== Google Recaptcha ====================? -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <title>Fokir - Personal Portfolio</title>
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
@@ -379,13 +382,14 @@
         <div class="section-title text-center">
           <h2 class="secondary-heading">contact us</h2>
         </div>
-        <form class="form-container">
+        <form id="contactForm" class="form-container">
           <div class="grid grid--2-cols">
-            <input required type="text" name="userName" placeholder="Name">
-            <input required type="email" name="userMail" placeholder="me@example.com">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="mail" placeholder="me@example.com">
             <input type="text" name="subject" placeholder="Subject">
-            <textarea rows="7" placeholder="Message"></textarea>
+            <textarea rows="7" name="message" placeholder="Message"></textarea>
           </div>
+          <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lciq5UqAAAAABjnKbztUsHuGWFbGl6yNQuW-J3u"></div>
           <button class="btn">send message</button>
         </form>
       </div>
